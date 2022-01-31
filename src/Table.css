@@ -1,0 +1,28 @@
+.table {
+  margin-top: 20px;
+  height: 400px;
+  overflow: scroll;
+  color: #6a5d5d;
+  background-color: #f5f6fa;
+  overflow-x: hidden;
+  font-family: "Times New Roman", Times, serif;
+  scroll-behavior: smooth;
+}
+.table_dark {
+  background-color: black;
+  color: #6c757d;
+}
+.table tr {
+  display: flex;
+  justify-content: space-between;
+}
+.table td {
+  padding: 0.4rem;
+}
+.table tr:nth-of-type(even) {
+  background-color: lightgray;
+}
+.table_dark tr:nth-of-type(even) {
+  background-color: #30353a;
+  color: black;
+}

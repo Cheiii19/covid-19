@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(228, 33%, 97%);
+  overflow-x: hidden;
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f5f6fa;
+  padding: 20px;
+  padding-top: 2rem;
+  scroll-behavior: smooth;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.app_dark {
+  background-color: black;
+}
+
+.app__dropdown {
+  background-color: white;
+}
+
+.app__dropdown > .MuiInputBase-input {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.app__dropdownDark {
+  background-color: rgb(12, 12, 12);
+}
+
+.app__dropdownDark > .MuiInputBase-input {
+  color: #6c757d;
+}
+
+.app__dropdownDark > .MuiSelect-icon {
+  color: #6c757d;
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.app__header > h1 {
+  color: #fc3c3c;
+  font-size: 2rem;
+}
+
+.app__stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__left {
+  flex: 0.9;
+}
+
+.app_rightDark {
+  background-color: rgb(12, 12, 12);
+}
+
+.app__informationDark > h3 {
+  color: #6c757d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.app__informationDark > h3:last-of-type {
+  margin-top: 1rem;
+}
+
+.app__information > h3 {
+  color: #6a5d5d;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.app__information > h3:last-of-type {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+}
+
+.dark_mode {
+  height: 3vh;
+  width: 100%;
+  top: 0%;
+  background-color: transparent;
+  float: right;
+  margin-bottom: -2vh;
+}
+
+.dark_mode_dark {
+  background-color: black;
+}
+
+.darkmode__sunny {
+  color: gold;
+  float: right;
+  padding-right: 6vw;
+}
+
+.darkmode__moon {
+  float: right;
+  padding-right: 6vw;
+}
+
+.dark_mode > p {
+  cursor: pointer;
+}
+
+.dark_mode_header {
+  color: #6c757d;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.4vw;
+  background-color: transparent;
+  transition: all 3000ms ease-in-out;
+}
+::-webkit-scrollbar:hover {
+  width: 1vw;
+  scroll-behavior: smooth;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  display: none;
+  background-color: transparent;
+  scroll-behavior: smooth;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  transition: all 3000ms ease-in-out;
+  border-radius: 5vh;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000;
+}
